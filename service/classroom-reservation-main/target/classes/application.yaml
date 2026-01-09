@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+    url: jdbc:mysql://localhost:3306/reservation_demo?serverTimezone=UTC&useSSL=false&useUnicode=true&charsetEncoding=UTF-8
+    #url: jdbc:mysql://localhost:3306/reservation_demo?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC&useUnicode=true&charsetEncoding=UTF-8
+    username: root
+    password:
+  thymeleaf:
+    cache: false
+
+mybatis:
+  type-aliases-package: com.mango.pojo
+  mapper-locations: classpath:mybatis/mapper/*.xml
+server:
+  port: 9099
